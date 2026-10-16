@@ -1,6 +1,4 @@
 
-package com.darkgpt.chat;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.graphics.Color;
@@ -304,8 +302,8 @@ public class MainActivity extends Activity {
         });
     }
 
-    @Override
-    protected void onDestroy() {
+     @Override
+    protected void onDestroy()
         executor.shutdownNow();
         super.onDestroy();
     }
